@@ -1,0 +1,39 @@
+
+/*
+--gunmetal: #202c39ff;
+--gunmetal-2: #283845ff;
+--sage: #b8b08dff;
+--deep-champagne: #f2d492ff;
+--atomic-tangerine: #f29559ff;
+*/
+
+
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #283845ff;
+    background-color: #f2d492ff;
+
+}
+
+h1
+{
+    font-family: 'Press Start 2P', cursive;
+
+
+
+}
+
+h2
+{
+    font-family: 'Source Code Pro', monospace;
+    
+
+}
+
+h3
+{
+    font-family: 'Space Mono', monospace;
+    
+
+}
