@@ -7,6 +7,44 @@
 --atomic-tangerine: #f29559ff;
 */
 
+table tr:nth-child(1) {
+    background-color: #283845ff;
+    color: #fff; }
+
+ul li:nth-child(2) {
+    background-color: #b8b08dff;
+    color: #283845ff; }
+
+ul li:nth-child(4) {
+background-color: #f29559ff;
+color: #283845ff; }
+
+ul li:nth-child(5) {
+    background-color: #b8b08dff;
+    color: #283845ff; }
+
+ul li:nth-child(6) {
+background-color: #f29559ff;
+color: #283845ff; }
+
+ul li:nth-child(7) {
+    background-color: #b8b08dff;
+    color: #283845ff; }
+
+ul li:nth-child(8) {
+background-color: #f29559ff;
+color: #283845ff; }
+
+
+
+header, footer
+{
+	text-align: center;
+	color: #283845ff;
+	font-weight: bold;
+}
+
+
 
 body
 {
@@ -36,4 +74,15 @@ h3
     font-family: 'Space Mono', monospace;
     
 
+}
+
+.button {
+    background-color: #b8b08dff;
+}
+
+.customOne {
+    font-family: 'Source Code Pro', monospace;
+    background-color: lightgrey;
+    color: #283845ff;
+    font-size: 20px;
 }

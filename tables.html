@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="styles/default.css" rel="stylesheet" type="text/css">
+        <title> Nihal Mohammed - ITIS3135 - Activity #2 </title>
+    </head>
+    <header>
+        <h1>Nihal Mohammed Noice Monke</h1>
+        <nav>
+            <a href="index.html"> Home </a>
+            ||
+            <a href="introduction.html">Introduction</a>
+            ||
+            <a href="contract.html">Contract</a>
+            ||
+            <a href="https://webpages.uncc.edu/nmohamm8/" target="_blank">UNCC Home</a>
+            ||
+        </nav>
+    </header>
+<main>
+    <h2>Activity #2 - HTML Tables</h2>
+    <h3>My Tabular Data</h3>
+    <ol>
+        <li>Nihal Mohammed nmohamm8@uncc.edu 4</li>
+        <li>Rick Astley rickroll@entworks.com 14</li>
+        <li>Greg Heffley wimpykid@entworks.com 7</li>
+        <li>Nate Wright bignate@entwork.com 5</li>
+        <li>Ian Malcolm lifefindsaway@yahoo.com 20</li>
+        <li>Alan Grant agrant@gmail.com 10</li>
+        <li>Nick Fury fury@entwork.com 13</li>
+    </ol>
+
+    <h3>Employee Data in Simple Table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>E-mail</th>
+                <th class="right">Years of Service</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nihal Mohammed</td>
+                <td>nmohamm8@uncc.com</td>
+                <td class="right">4</td>
+            </tr>
+            <tr>
+                <td>Rick Astley</td>
+                <td>rickroll@entworks.com</td>
+                <td class="right">14</td>
+            </tr>
+            <tr>
+                <td>Greg Heffley</td>
+                <td>wimpykid@entworks.com</td>
+                <td class="right">7</td>
+            </tr>
+            <tr>
+                <td>Nate Wright</td>
+                <td>bignate@entwork.com</td>
+                <td class="right">7</td>
+            </tr>
+            <tr>
+                <td>Ian Malcolm</td>
+                <td>lifefindsaway@yahoo.com</td>
+                <td class="right">20</td>
+            </tr>
+            <tr>
+                <td>Alan Grant</td>
+                <td>agrant@gmail.com</td>
+                <td class="right">10</td>
+            </tr>
+            <tr>
+                <td>Nick Fury</td>
+                <td>fury@entwork.com</td>
+                <td class="right">13</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Employee Data in Complex Table</h3>
+    <figure>
+        <figcaption>Employee Information</figcaption>
+        <table>
+            <thead>
+                <tr>
+                    <th id="department">Department</th>
+                    <th id="name">Name</th>
+                    <th id="email">E-mail</th>
+                    <th id="years" class="right">Years of Service</th>
+                    <th id="salary" class="right">Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td headers="department" rowspan="1">Owners</td>
+                    <td headers="name">Nihal Mohammed</td>
+                    <td headers="email">nmohamm8@uncc.com</td>
+                    <td headers="years" class="right">14</td>
+                    <td headers="salary">$150,000</td>
+                </tr>
+                <tr>
+                    <td headers="department" rowspan="2">HR</td>
+                    <td headers="name">Rick Astley</td>
+                    <td headers="email">rickroll@entworks.com</td>
+                    <td headers="years" class="right">14</td>
+                    <td headers="salary">$99,000</td>
+                </tr>
+                <tr>
+                    <td headers="name">Greg Heffley</td>
+                    <td headers="email">wimpykid@entworks.com</td>
+                    <td headers="years" class="right">7</td>
+                    <td headers="salary">$112,500</td>
+                </tr>
+                <tr>
+                    <td headers="department" rowspan="2">Marketing</td>
+                    <td headers="name">Nate Wright</td>
+                    <td headers="email">bignate@entwork.com</td>
+                    <td headers="years" class="right">7</td>
+                    <td headers="salary">$61,000</td>
+                </tr>
+                <tr>
+                    <td headers="name">Ian Malcolm</td>
+                    <td headers="email">lifefindsaway@yahoo.com</td>
+                    <td headers="years" class="right">20</td>
+                    <td headers="salary">$86,900</td>
+                </tr>
+                <tr>
+                    <td headers="department" rowspan="2">Sales</td>
+                    <td headers="name">Alan Grant</td>
+                    <td headers="email">agrant@gmail.com</td>
+                    <td headers="years" class="right">10</td>
+                    <td headers="salary">$64,000</td>
+                </tr>
+                <tr>
+                    <td headers="name">Nick Fury</td>
+                    <td headers="email">fury@entwork.com</td>
+                    <td headers="years" class="right">13</td>
+                    <td headers="salary">$115,000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" class="right">Total Annual Salary Budget:</td>
+                    <td headers="salary" class="right">$688,400</td>
+                </tr>
+            </tfoot>
+        </table>
+    </figure>
+</main>
+
+
+<footer>
+    <nav>
+        <a href="https://webpages.uncc.edu/nmohamm8/" target="_blank">UNCC Home</a>
+        ||
+        <a href="https://github.com/TheFlyingEnt/" target="_blank">Github</a>
+        ||
+        <a href="TheFlyingEnt.github.io" target="_blank">Github.io</a>
+        ||
+        <a href="https://www.freecodecamp.org/nmohamm8-noicemonke" target="_blank">FreeCodeCamp</a>
+        ||
+        <a href="https://www.codecademy.com/profiles/nmohamm8-noicemonke" target="_blank">CodeAcademy</a>
+        ||
+        <a href="https://www.linkedin.com/in/nmohammed2/" target="_blank">LinkedIn</a>
+        ||
+    </nav>
+    <br>Designed by EntWorks Design ©
+    .
+    <p>
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img src="images/button-validation-html5.png" width="88" height="31" alt="Validate webpage HTML.">
+        </a>
+
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+             <img src="images/button-validation-css.png" width="88" height="31" alt="Validate webpage CSS.">
+        </a>
+
+    </p>
+</footer>
+</html>
