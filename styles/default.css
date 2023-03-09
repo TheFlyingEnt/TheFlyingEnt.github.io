@@ -44,7 +44,26 @@ header, footer
 	font-weight: bold;
 }
 
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: #283845ff;
+}
 
+a:hover {
+    color: white;
+
+}
+
+.centered {
+    text-align: center;
+    align-items: center;
+
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+}
 
 body
 {
@@ -78,6 +97,14 @@ h3
 
 .button {
     background-color: #b8b08dff;
+}
+
+.dbody
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #283845ff;
+    background-color: #f2d492ff;
+
 }
 
 .customOne {

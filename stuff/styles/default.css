@@ -1,0 +1,54 @@
+h1
+{
+    font-family: 'Times New Roman';
+    color: black;
+    background-color: grey;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+
+}
+
+h2 {
+    font-family: 'Comic Sans MS', 'Comic Sans', monospace;
+    color: black;
+    background-color: grey;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+}
+
+body {
+    font-family: 'Papyrus', sans-serif;;
+    color: black;
+    /*background-color: black;*/
+    margin-top: 30px;
+    margin-left: 55px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+p {
+    font-family: 'Papyrus', sans-serif;
+    font-size: 200px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 2px;
+    margin-right: 80px;
+    margin-bottom: 10px;
+    border-style: dotted dashed solid double;;
+
+}
+
+ul, li{
+    font-family: 'Comic Sans MS', 'Comic Sans', monospace;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 5px;
+    margin-bottom: 1px;
+
+}
