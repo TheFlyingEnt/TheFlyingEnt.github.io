@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="hobby.js" defer></script>
+        <title>ITIS3135 | Nihal Mohammed Noice Monke | Midterm</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;700&family=Poppins&family=Yesteryear&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Space Mono', monospace;
+                max-width: 1080px;
+                margin: 0 auto;
+                float: none;
+                text-align: center;
+                background-color: #EFF6E0;
+            }
+
+            header {
+                background-color: #413c62;
+                background-image: url('images/Render2.png');
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-size: 100%;
+                background-position-y: 30%;
+                color: white;
+                font-family: 'Yesteryear', cursive;
+                letter-spacing: 5px;
+                font-size: 25px;
+                width: 1130px;
+                height: 200px;
+                justify-content: space-around;
+                max-width: 95%;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            h2 {
+                background-color: #AEC3B0;
+                margin: auto;
+                height: 70px;
+                margin-top: 20px;
+                text-align: center;
+                line-height: 60px;
+                align-items: center;
+            }
+
+            main {
+                /*width: 800px;*/
+                max-width: 95%;
+                margin: auto;
+                text-align: center;
+            }
+
+            /*Navagation*/
+            nav {
+                background-color: #124559;
+                overflow: hidden;
+                font-family: 'Josefin Sans', sans-serif;
+            }
+
+            nav a {
+                float: right;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .navHome {
+                color: #f2f2f2;
+                float: left;
+                background-color: #01161E;
+            }
+
+            nav a:hover {
+                background-color: #01161E;
+                color: #f2f2f2;
+                text-decoration: none;
+            }
+
+            /* For the Rows and Colums*/
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .leftBox {
+                background-color: #01161E;
+                color: white;
+                float: left;
+                width: 37.5%;
+                text-align: left;
+                font-family: 'Poppins', sans-serif;
+                max-height: 300px;
+            }
+
+            .middleBox {
+                background-color: white;
+                float: left;
+                width: 25%;
+            }
+
+            .rightBox {
+                background-color: #124559;
+                float: left;
+                width: 62.5%;
+                text-align: left;
+                font-family: 'Rubik 80s Fade', cursive;
+                color: white;
+                font-size: 67px;
+                max-height: 300px;
+            }
+
+            .boxInside {
+                margin: 20px;
+            }
+
+            /*.aboutme {
+                border: 3px solid #2c6f38;
+                padding: 20px 40px 40px;
+                max-width: 640px; 
+                margin: auto;
+            }*/
+            .aboutme__image {
+                display: inline-block;
+                vertical-align: top;
+                width: 46%;
+                margin: 20px 30px 0 0;
+            }
+
+            .aboutme__text {
+                display: inline-block;
+                width: 46%;
+            }
+
+            /*Slide Show*/
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+
+            .mySlides,
+            .mySlides1 {
+                display: none;
+            }
+
+            .prev {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                margin-top: -22px;
+                left: 0;
+                padding: 16px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                user-select: none;
+            }
+
+            .next {
+                cursor: pointer;
+                right: 0;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                font-size: 18px;
+                color: white;
+                margin-top: -22px;
+                font-weight: bold;
+            }
+
+            .caption_slide {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .counter_slide {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+
+            .blenderImage {
+                color: white;
+                font-family: 'Josefin Sans', sans-serif;
+                letter-spacing: 5px;
+                font-size: 25px;
+                background-color: #01161E;
+            }
+
+            .blockbenchImage {
+                color: white;
+                font-family: 'Josefin Sans', sans-serif;
+                letter-spacing: 5px;
+                font-size: 25px;
+                background-color: #01161E;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Animation and Diesgn</h1>
+        </header>
+        <main>
+            <nav>
+                <a class="navHome" id="p1" onclick="pageOneLoad()">Home</a>
+                <a id="p2" onclick="pageTwoLoad()">About Me!</a>
+                <a id="p3" onclick="pageThreeLoad()">When to Work</a>
+                <a id="p4" onclick="pageFourLoad()">Tutorial</a>
+                <a id="p5" onclick="pageFiveLoad()">Which Software</a>
+                <a id="p6" onclick="pageSixLoad()">Downloads</a>
+            </nav>
+            <!--
+                Page 1 - Done
+                Page 2 - Done
+                Page 3 - Meetings
+                Page 4 - Done
+                Page 5 - Done
+                Page 6 - Download Page
+
+
+
+            -->
+            <section id="page1">
+                <!-- What -->
+                <!-- Done -->
+                <div class="divider"></div>
+                <h2>Home</h2>
+                <h3>What is Design and Animation? </h3>
+                <p>
+                    <b>Design and Animation</b> is the Idea of creating images. People use this to express themself. It is your choice what you want to make! It ranges from 3D and 2D <br>
+                    <br> Below is some of my Work. While there are tons of programs that allow you to Animate and Design, I prefer to use Blender and Blockbench for 3D Animation and Adobe Illustrator for 2D Design.
+                </p>
+                <div class="slideshow-container">
+                    <div class="mySlides">
+                        <div class="counter_slide">1 / 5</div>
+                        <img src="images/Render2.png" style="width:100%" alt="Me and My Roomates">
+                        <div class="caption_slide">Me and My Roomates in the Dark</div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="counter_slide">2 / 5</div>
+                        <img src="images/Render3.png" style="width:100%" alt="Me and My Roomates">
+                        <div class="caption_slide">Me and My Roomates in the Light</div>
+                    </div>
+                    <a class="prev" onclick="backSlides('roommate')">&#10094;</a>
+                    <a class="next" onclick="fowardSlides('roommate')">&#10095;</a>
+                    <div class="mySlides">
+                        <div class="counter_slide">3 / 5</div>
+                        <img src="images/SPOILER_beamy_render.png" style="width:100%" alt="Commission">
+                        <div class="caption_slide">A Commission</div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="counter_slide">4 / 5</div>
+                        <img src="images/SPOILER_blastrender3.png" style="width:100%" alt="1st Render">
+                        <div class="caption_slide">One of my First 3D Renders</div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="counter_slide">5 / 5</div>
+                        <img src="images/SPOILER_mk_render.png" style="width:100%" alt="My Friends">
+                        <div class="caption_slide">A Render with my Friends</div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <!--<div><div class="caption_slide">Me and My Roomate in the Light</div><video width="93%" height="93%" controls><source src="images/0001-15006.mkv" type="video/mp4"></video></div>-->
+            </section>
+            <section id="page2" class="center">
+                <!-- Who/About Me -->
+                <!-- Done -->
+                <div class="aboutme">
+                    <img class="aboutme__image" src="https://webpages.charlotte.edu/nmohamm8/itis3135/images/me.jpg" alt="Me">
+                    <div class="aboutme__text">
+                        <h2>About Me</h2>
+                        <h3>Hello There, I am Nihal Mohammed!</h3>
+                        <p class="center">I am currently a sophomore at UNCC. One of my passions and hobbies is making 3D Animation and 2D Design. I originally got interested in Animation and Design because of a Class I had as a Freshman in Highschool. Since then, I have been trying to improve my skills.</p>
+                        <br> I currently use Blockbench and Blender for 3D Animation and Adobe Illustrator for 2D Design. I have been making Logos and other artworks for different people for years.
+                    </div>
+                </div>
+                <h2>How to Contact Me for Inquires</h2>
+                <form action="”#”">
+                    <label for="firstName" class="labelContact">Your First Name: <br>
+                    </label>
+                    <input type="text" name="firstName" id="firstName">
+                    <br>
+                    <label for="lastName" class="customOne">Your Last Name: <br>
+                    </label>
+                    <input type="text" name="lastName" id="lastName">
+                    <br>
+                    <label for="email" class="customOne">Your Email: <br>
+                        <input type="email" name="email" id="email" required="" placeholder="Enter a valid email address">
+                    </label>
+                    <br>
+                    <label for="phonenumber" class="customOne">Phone number: <br>
+                        <input type="text" placeholder="(000) 000-0000" id="phonenumber" size="10">
+                    </label>
+                    <br>
+                    <input type="submit" class="button">
+                </form>
+            </section>
+            <section id="page3">
+                <!-- When -->
+                <h2>When Do I work on my Project></h2>
+                <p>I tend to work on my Project in Design and Animation usually in my Freetime. I tend to make the Models in Blockbench. The Textures I make in Adobe Illustator. Once I am done with Making the Models, I will use blender to Animate. This is where I also test the lighting for my 3D Animations. Due to my Laptop limit, to finsih rendering my image, I will wait till I go Home and use my much more powerfull PC to render the scenes <br>
+                    <br> Here is an example of something I am working on currently:
+                </p>
+                <video width="320" height="240" controls>
+                    <source src="images/season1.mkv" type="video/mp4">
+                </video>
+                <video width="320" height="240" controls>
+                    <source src="images/rickandmorty.mkv" type="video/mp4">
+                </video>
+            </section>
+            <section id="page4">
+                <!-- How -->
+                <!-- Done -->
+                <h2>How to Start?</h2>
+                <h3>Getting Started</h3>
+                <p>For 3D Modeling, I there are pleny of programs ranging from high intenste one like Blender or MoonRay (which big animation studios use) or basic ones that run off of the web browser such as Block Bench.</p>
+                <p></p>
+                <div class="aboutme">
+                    <h2 class="blenderImage">Editing</h2>
+                    <ol>
+                        <li>
+                            <strong>Choosing Software</strong> Choose what software you want to use
+                        </li>
+                        <li>
+                            <strong>Tutorials:</strong> Watching Videos and following a guide can help with the basics.
+                        </li>
+                        <li>
+                            <strong>Getting an idea</strong> Once you are familiar with your software, get an idea and start planning. I would recomend make a sketch-up
+                        </li>
+                        <li>
+                            <strong>Design and Render:</strong> Once you have a good Idea, Design Away! and remeber to save often.
+                        </li>
+                    </ol>
+                    <ol>
+                        <li>
+                            <strong>Blender Tutorial</strong>
+                            <iframe width="1024" height="576" src="https://www.youtube.com/embed/XqzxL_-XjA0" title="Minecraft Modeling Basics - Blockbench tutorial #1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </li>
+                        <li>
+                            <strong>Blockbench</strong>
+                            <iframe width="1024" height="576" src="https://www.youtube.com/embed/nIoXOplUvAw" title="Blender Beginner Tutorial - Part 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </li>
+                        <li>
+                            <strong>Illustator</strong>
+                            <iframe width="1024" height="576" src="https://www.youtube.com/embed/Ib8UBwu3yGA" title="Adobe Illustrator for Beginners | FREE COURSE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </li>
+                        <li>
+                            <strong>Moonray: </strong> Comming Soon (Program is still New)
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <section id="page5">
+                <!-- Why -->
+                <!-- Done -->
+                <h2>Programs and Why to Use Them?</h2>
+                <h3>Which one do I use?</h3>
+                <p>In Animation and Design, The are 2 Main categories: 3D and 2D. Choosing which style and software can make a big difference. Some Programs have the ability to do real-life lighting while others are for more of a blocky style. A program can make a difference in art style to! Let's see the differences as well as the Pros and Cons of each Program!</p>
+                <div class="aboutme">
+                    <h2 class="blenderImage">Block Bench</h2>
+                    <div class="aboutme__text">
+                        <h3>Avantage</h3>
+                        <p>
+                        <ul>
+                            <li>Easy for beginner</li>
+                            <li>Can run on any device</li>
+                            <li>Simple and Easy to learn UI</li>
+                        </ul>
+                        </p>
+                        <h3>Disavantage</h3>
+                        <p>
+                        <ul>
+                            <li>Can not do Lighting</li>
+                            <li>Limited to Voxels</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <figure class="aboutme__image">
+                        <img class="aboutme__image" src="images/blockbench.PNG" alt="Blockbench">
+                        <figcaption>Render in Blender</figcaption>
+                    </figure>
+                </div>
+                <div class="aboutme">
+                    <h2 class="blockbenchImage">Blender</h2>
+                    <p>Blender is a Program that is designed for more complicated scenes. It adds many extra features which can help an Animation look more realistic</p>
+                    <div class="aboutme__text">
+                        <h3>Advantage</h3>
+                        <p>
+                        <ul>
+                            <li>Easy for beginner</li>
+                            <li>Much better lighting</li>
+                            <li>Bigger Community</li>
+                        </ul>
+                        </p>
+                        <h3>Disadvantage</h3>
+                        <p>
+                        <ul>
+                            <li>Requires a Powerful PC</li>
+                            <li>Takes time to Render an Image/Animation</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <figure class="aboutme__image">
+                        <img class="aboutme__image" src="images/Render3.png">
+                        <figcaption>Render in Blender</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section id="page6">
+                <h2>Downloads</h2>
+                <!-- Where -->
+                <h3>How that we have shown all the different Software and now It is your time to choose Yours. Here is a Recap:</h3>
+                <p></p>
+                <div class="aboutme">
+                    <div class="aboutme__image">
+                        <figure class="aboutme__image">
+                            <a href="https://web.blockbench.net/">
+                                <img class="aboutme__image" src="images/Blender_3.3.0_screenshot.png" alt="Blender">
+                            </a>
+                            <figcaption>Click on image to download</figcaption>
+                        </figure>
+                    </div>
+                    <div class="aboutme__image">
+                        <figure class="aboutme__image">
+                            <a href="https://www.blender.org/download/">
+                                <img class="aboutme__image" src="images/blockbench_logo.PNG" alt="Blockbench">
+                            </a>
+                            <figcaption>Click on image to download</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Designed by Nihal's EntWorks Design © 1984</p>
+            <a href="https://validator.w3.org/check?uri=referer">
+                <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img src="images/valid-css.png" width="88" height="31" alt="Link to CSS validator">
+            </a>
+        </footer>
+    </body>

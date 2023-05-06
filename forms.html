@@ -1,35 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <head>
         <meta charset="UTF-8">
         <link href="styles/default.css" rel="stylesheet" type="text/css">
         <title>ITIS3135 | Nihal Mohammed Noice Monkee | Activity #3 </title>
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     </head>
-    <header>
-        <h1>Nihal Mohammed ITIS 3135</h1>
-        <nav>
-            <a href="index.html">Home</a> 
-            ||
-            <a href="introduction.html">Introduction</a> 
-            ||
-            Contact ||
-            <a href="forms.html">Forms</a> 
-            ||
-            <a href="tables.html">Tables</a>
-            ||
-            <a href="polygons.html">Polygons</a>
-            ||
-            <a href="https://webpages.uncc.edu/nmohamm8/" target="_blank">UNCC Home</a> 
-            ||
-            <a href="stuff/🐵 !nt3rn3t Sp@c3.htm" target="_blank">🐵 Crappy Website</a> 
-        </nav>
-    </header>
+<body>
+    <header></header>
+        <script src="scripts/siteLinks.js"></script>
 
 
 
@@ -37,11 +22,12 @@
     <h2>Activity #3 - HTML Form</h2>
     <h3>Fill out the Form to Contact Us:</h3>
     <form action="”#”">
+        <fieldset>
         <label for="firstName" class="customOne">Your First Name:</label>
-        <input type="text" name="firstName" id="firstName" required="true"> <br>
+        <input type="text" name="firstName" id="firstName" required=""> <br>
 
         <label for="lastName" class="customOne">Your Last Name:</label>
-        <input type="text" name="lastName" id="lastName" required="true"><br>
+        <input type="text" name="lastName" id="lastName" required=""><br>
 
         <label for="email" class="customOne">Your Email:
             <input type="email" name="email" id="email" required="" placeholder="Enter a valid email address">
@@ -51,7 +37,7 @@
 
         <label for="phonenumber" class="customOne">Phone number:
 
-            <input type="phonenumber" required="false" placeholder="(000) 000-0000" id="phonenumber" size="10">
+            <input type="text" required="false" placeholder="(000) 000-0000" id="phonenumber" size="10">
         </label>
         <br>
         <p>How would you like us to Contact you?</p>
@@ -72,37 +58,13 @@
         <input type="submit" class="button">
         <br>
         <input type="reset" class="button">
-
+    </fieldset>
     </form>
 </main>
 
 
-<footer>
-    <nav>
-        <a href="https://webpages.uncc.edu/nmohamm8/" target="_blank">UNCC Home</a>
-        ||
-        <a href="https://github.com/TheFlyingEnt/" target="_blank">Github</a>
-        ||
-        <a href="TheFlyingEnt.github.io" target="_blank">Github.io</a>
-        ||
-        <a href="https://www.freecodecamp.org/nmohamm8-noicemonke" target="_blank">FreeCodeCamp</a>
-        ||
-        <a href="https://www.codecademy.com/profiles/nmohamm8-noicemonke" target="_blank">CodeAcademy</a>
-        ||
-        <a href="https://www.linkedin.com/in/nmohammed2/" target="_blank">LinkedIn</a>
-        ||
-    </nav>
-    <br>Designed by EntWorks Design © 1984...
-    .
-    <p>
-        <a href="https://validator.w3.org/check?uri=referer">
-            <img src="images/button-validation-html5.png" width="88" height="31" alt="Validate webpage HTML.">
-        </a>
-
-        <a href="https://jigsaw.w3.org/css-validator/check/referer">
-             <img src="images/button-validation-css.png" width="88" height="31" alt="Validate webpage CSS.">
-        </a>
-
-    </p>
-</footer>
+<script src="scripts/footerLinks.js"></script>
+        <footer>
+        </footer>
+</body>
 </html>

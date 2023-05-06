@@ -1,76 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <head>
         <meta charset="UTF-8">
         <link href="styles/default.css" rel="stylesheet" type="text/css">
         <title>ITIS3135 | Nihal Mohammed Noice Monkee | Activity #2 </title>
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     </head>
-    <header>
-        <h1>Nihal Mohammed ITIS 3135</h1>
-        <nav>
-            <a href="index.html"> Home </a>
-            ||
-            <a href="introduction.html">Introduction</a>
-            ||
-            Contact ||
-            <a href="forms.html">Forms</a>
-            ||
-            <a href="tables.html">Tables</a>
-            ||
-            <a href="polygons.html">Polygons</a>
-            ||
-            <a href="https://webpages.uncc.edu/nmohamm8/" target="_blank">UNCC Home</a>
-            ||
-            <a href="stuff/🐵 !nt3rn3t Sp@c3.htm" target="_blank">🐵 !nt3rn3t Sp@c3</a>
-        </nav>
-    </header>
-<main>
-    <h2 class="centered">Mohammed, Nihal</h2>
-    <!--<iframe width="967" height="544" src="https://www.youtube.com/embed/xvFZjo5PgG0" title="Rick Roll (Different link + no ads)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
-    
-    <video class="centered" width="520" height="440" playsinline autoplay muted>
-        <source src="images/rickroll.mp4" type="video/mp4">
-        <!--<source src="images/rickroll.ogg" type="video/ogg">-->
-      Your browser does not support the video tag.
-    </video>
-    
-    <p>Welcome to my Homepage</p>
-    <p>:)</p>
-</main>
-
-
-<footer>
-    <nav>
-        <a href="https://webpages.uncc.edu/nmohamm8/" target="_blank">UNCC Home</a>
-        ||
-        <a href="https://github.com/TheFlyingEnt/" target="_blank">Github</a>
-        ||
-        <a href="TheFlyingEnt.github.io" target="_blank">Github.io</a>
-        ||
-        <a href="https://www.freecodecamp.org/nmohamm8-noicemonke" target="_blank">FreeCodeCamp</a>
-        ||
-        <a href="https://www.codecademy.com/profiles/nmohamm8-noicemonke" target="_blank">CodeAcademy</a>
-        ||
-        <a href="https://www.linkedin.com/in/nmohammed2/" target="_blank">LinkedIn</a>
-        ||
-    </nav>
-    <br>Designed by EntWorks Design © 1984...
-    .
-    <p>
-        <a href="https://validator.w3.org/check?uri=referer">
-            <img src="images/button-validation-html5.png" width="88" height="31" alt="Validate webpage HTML.">
-        </a>
-
-        <a href="https://jigsaw.w3.org/css-validator/check/referer">
-             <img src="images/button-validation-css.png" width="88" height="31" alt="Validate webpage CSS.">
-        </a>
-
-    </p>
-</footer>
+    <body>
+        <header></header>
+        <script src="scripts/siteLinks.js"></script> <!-- Uses Javascript to import Header -->
+        <main>
+            <h2 class="centered">Home | Mohammed, Nihal</h2>
+            <!--<iframe width="967" height="544" src="https://www.youtube.com/embed/xvFZjo5PgG0" title="Rick Roll (Different link + no ads)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+            <video id="myVideo" class="centered" width="520" height="440" playsinline autoplay muted> <!---->
+                <source src="images/rickroll.mp4" type="video/mp4">
+                <!--<source src="images/rickroll.ogg" type="video/ogg">--> Your browser does not support the video tag.
+            </video>
+            <script src="scripts/rickroll.js"></script>
+            <p>Welcome to my Homepage</p>
+            <p>:)</p>
+        </main>
+        <script src="scripts/footerLinks.js"></script> <!-- Uses Javascript to import Footer -->
+        <footer>
+        </footer>
+    </body>
 </html>
