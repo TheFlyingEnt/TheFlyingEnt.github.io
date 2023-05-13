@@ -31,11 +31,11 @@ document.addEventListener("DOMContentLoaded", function() {
             ||
             <a href="project1.html">Project Design</a> 
             ||
-            <a href="peer1.html">Peer Review #1</a> 
+            <a href="review1.html">Peer Review #1</a> 
             ||
-            <a href="peer2.html">Peer Review #2</a>
+            <a href="review2.html">Peer Review #2</a>
             ||
-            <a href="client_project_updated/index.html">Client Project</a> 
+            <a href="client_project/index.html">Client Project</a> 
             <br>
             <br>
         </nav>

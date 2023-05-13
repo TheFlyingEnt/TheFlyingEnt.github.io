@@ -1,138 +1,226 @@
 <!DOCTYPE html>
-<html lang="ent">
-    <meta charset="UTF-8">
-    <link href="client.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
-
-<body>
-    <header>
-        <div id="abc">
-            <nav>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UNCC MSA | Home</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Ajax -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@1,200&family=Quicksand&display=swap" rel="stylesheet">
+        
+        
+        <script src="default.js"></script>
+    </head>
+    <body>
+        <header>
+        <div id="abc" class="top-navigation">
+            <!-- Navigation-->
+            <nav id="newNavbar">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#news">Events & Activities</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events & Activities</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li id="responsive">
+                        <a  class="icon" onclick="topNav()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                </ul>-
+            </nav>
+            <!-- Social Media-->
+            <ul class="socialMedia">
+                <li> <!-- Change to Instagram -->
+                    <a class="social-insta" href="https://www.instagram.com/msa_uncc/?hl=en">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <!--<i class="fa fa-facebook" aria-hidden="true"></i>-->
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li> <!-- Change to Whatapp -->
+                    <a class="social-whatsapp" href="https://chat.whatsapp.com/IPL6MtAq4E8AokIFfGZB79">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <br>
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li> <!-- Change to Link Tree -->
+                    <a class="social-linktree" href="https://linktr.ee/msa49ers22_23">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <br>
+                        <!--<i class="fa fa-instagram" aria-hidden="true"></i>-->
+                        <i class="fa fa-tree" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li> <!-- Change to Youtube -->
+                    <a class="social-google" href="https://www.youtube.com/channel/UCjZhMLRrnhMdQ_T7S9EsHgw">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <br>
+                        <!--<i class="fa fa-google-plus" aria-hidden="true"></i>-->
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </a>
+                </li>
                 </ul>
-            </nav>   
+            <!-- Title -->
+            <div class="centered">
+                <h1 class="title">Muslim Student Association</h1>
+                <p class="title-arabic ">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+                <!--<a class="btn-bgstroke">See our Board</a>-->
+            </div>
         </div>
-            <div class="container">
-                
-                <!--<div class="bottom-left">Bottom Left</div>-->
-                <!--<div class="top-left">Top Left</div>-->
-                <!--<div class="top-right">Top Right</div>-->
-                <!--<div class="bottom-right">Bottom Right</div>-->
-                <div>
-                    <!--This Code if for the Social Media-->
-                    <ul class="socialMedia">
-                        <li>
-                          <a class="facebook" href="#">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="twitter" href="#">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="instagram" href="#">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="google" href="#">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <i class="fa fa-google-plus" aria-hidden="true"></i>
-                          </a>
-                        </li>
-                      </ul>
+        </header>
+        <main>
+            <section class="message-section">
+                <h2 class="message-h2"><b>Our Message</b></h2>
+                <!-- h2 will be Big and Bold, Center-Text Alignement -->
+                <p class="message-paragraph">
+                    The mission of the UNCC MSA is to provide an environment that empowers 
+                    all Muslim students in UNC Charlotte spiritually, academically, socially, 
+                    and professionally by building a bridge between the Muslim community at 
+                    UNCC and the MSA. ⛏
+                    <br>
+                    <br>
+                    We will achieve this by, increasing Islamic awareness 
+                    in the society at large, providing spiritual events, educational 
+                    opportunities, and social and fun programs that make the students' 
+                    experiences at UNCC beyond successful.
+                </p>
+                <!-- Message will be not be Centered. It will try to be Boxy with Largestish Font -->
+                <h3 class="message-h3">- UNCC MSA Board</h3>
+                <!-- From will be Right or Centered from a Currsive Font style -->
+            </section>
 
-                      <div class="centered">
-                        <h1 class="title">Muslim Student Association</h1>
-                        <p class="title-arabic ">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
-                        <a class="btn-bgstroke">See our Board</a>
+            <section class="background-section">
+                <div class="centerDoc">
+
+                    <div class="row">
+                        <div class="cardalt">
+                            <h2 class="message-h2">Constitution</h2>
+                        </div>
+                        <br>
                     </div>
+
+                    <iframe class="scribd_iframe_embed" title="msa - constitution 2019" src="https://www.scribd.com/embeds/435840155/content?start_page=1&view_mode=scroll&access_key=key-xiMJ42fXHz7gKCnkqeYy" tabindex="0" data-auto-height="true" data-aspect-ratio="0.7729220222793488" width="100" height="600"></iframe><p  style="   margin: 12px auto 6px auto;   font-family: Helvetica,Arial,Sans-serif;   font-style: normal;   font-variant: normal;   font-weight: normal;   font-size: 14px;   line-height: normal;   font-size-adjust: none;   font-stretch: normal;   -x-system-font: none;   display: block;"   ><a title="View msa - constitution 2019 on Scribd" href="https://www.scribd.com/document/435840155/msa-constitution-2019#from_embed"  style="text-decoration: underline;"></a><a title="View api-413024581's profile on Scribd" href="https://www.scribd.com/user/413024581/api-413024581#from_embed"  style="text-decoration: underline;"></a></p>
                 </div>
-            </div>  
-            <!--<div style="padding-left:16px">-->   
-</header>
-    <!--<section>
-        <div class="aboutUs">
+            </section>
+
+            <!--<section>
+                <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                <div class="elfsight-app-4d905baa-b0a4-4077-9210-291face8268c"></div>
+            </section>-->
+        </main>
+        <br>
+        <br>
+        <footer>
+        </footer>
+
+
+
+        <!--<div class="aboutUs">
             <h2 class="aboutUs-header"><i>Our Mission</i></h2>
             <span class="aboutUs-span"></span>
             <br>
             <p class="aboutUs-paragraph">The mission of the UNCC MSA is to provide an environment that empowers 
                 all Muslim students in UNC Charlotte spiritually, academically, socially, 
                 and professionally by building a bridge between the Muslim community at 
-                UNCC and the MSA. We will achieve this by, increasing Islamic awareness 
+                UNCC and the MSA. 
+                <br>
+                <br>
+                We will achieve this by, increasing Islamic awareness 
                 in the society at large, providing spiritual events, educational 
                 opportunities, and social and fun programs that make the students' 
                 experiences at UNCC beyond successful.
             </p>
-            Banner Class
-        </div>
-        !--<h1>Muslim Student Association</h1>
-        <p>بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
-        <a class="btn-bgstroke">See our Board</a>--
-    </section>-->
+            <br>
+            - UNCC MSA Board
+        </div>-->
 
-
-        <!--
-            <div style="margin: 5%; background-color: pink; padding: 2%;">
-                <div id="bannerimage"></div>
-                <h2>Responsive Topnav Example</h2>
-                <p>Resize the browser window to see how it works.</p>
-                Banner Class
+        <!--<div class="aboutUs-div ">
+            <div class="aboutUs-divright">
+                <h2 class="aboutUs-header"><i>Our Mission</i></h2>
+                <span class="aboutUs-span"></span>
+                <br>
+                <p class="aboutUs-paragraph">The mission of the UNCC MSA is to provide an environment that empowers 
+                    all Muslim students in UNC Charlotte spiritually, academically, socially, 
+                    and professionally by building a bridge between the Muslim community at 
+                    UNCC and the MSA. 
+                    <br>
+                    <br>
+                    We will achieve this by, increasing Islamic awareness 
+                    in the society at large, providing spiritual events, educational 
+                    opportunities, and social and fun programs that make the students' 
+                    experiences at UNCC beyond successful.
+                </p>
+                <br>
+                - UNCC MSA Board
             </div>
-        -->
-    
-</body>
+            <div class="aboutUs-divleft">
+                <h2 class="aboutUs-header"><i>Our Mission 2</i></h2>
+                <span class="aboutUs-span"></span>
+                <br>
+                <p class="aboutUs-paragraph">The mission of the UNCC MSA is to provide an environment that empowers 
+                    all Muslim students in UNC Charlotte spiritually, academically, socially, 
+                    and professionally by building a bridge between the Muslim community at 
+                    UNCC and the MSA. 
+                    <br>
+                    <br>
+                    We will achieve this by, increasing Islamic awareness 
+                    in the society at large, providing spiritual events, educational 
+                    opportunities, and social and fun programs that make the students' 
+                    experiences at UNCC beyond successful.
+                </p>
+            </div>
+
+        </div>-->
 
 
 
-<!-- Re Write v3-->
-<body>
-    <div class="top-navigation">
-        <a href="#home">Home</a>
-        <a href="#news">Events & Activities</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="topNav()">
-          <i class="fa fa-bars"></i>
-        </a>
-        <script src="client.js"></script>
-    </div>
 
-    <div id="abc">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#news">Events & Activities</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-    </div>
 
-</body>
+
+
+        <!--<div class="aboutUs-div ">
+            <div id="aboutUs-left">
+                <h2 class="aboutUs-header"><i>Our Mission</i></h2>
+                <span class="aboutUs-span"></span>
+                <br>
+                <p class="aboutUs-paragraph">The mission of the UNCC MSA is to provide an environment that empowers 
+                    all Muslim students in UNC Charlotte spiritually, academically, socially, 
+                    and professionally by building a bridge between the Muslim community at 
+                    UNCC and the MSA. 
+                    <br>
+                    <br>
+                    We will achieve this by, increasing Islamic awareness 
+                    in the society at large, providing spiritual events, educational 
+                    opportunities, and social and fun programs that make the students' 
+                    experiences at UNCC beyond successful.
+                </p>
+                <br>
+                - UNCC MSA Board
+            </div>
+            <div id="aboutUs-right">
+                HELLO THERE
+            </div>
+
+        </div>-->
+    </body>
 </html>
